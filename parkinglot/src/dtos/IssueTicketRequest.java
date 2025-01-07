@@ -34,6 +34,9 @@ public class IssueTicketRequest {
     }
 
     public Long getParkingLotId() {
+        if(parkingLotId == null) {
+            return 0L;
+        }
         return parkingLotId;
     }
 

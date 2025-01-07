@@ -13,7 +13,7 @@ public class SimpleParkingLotAllotmentStrategy implements ParkingPlaceAllotmentS
     private ParkingLotRepository parkingLotRepository;
 
     // Constructor to initialize the repository
-    public SimpleParkingLotAllotmentStrategy() {
+    public SimpleParkingLotAllotmentStrategy(ParkingLotRepository parkingLotRepository) {
         this.parkingLotRepository = parkingLotRepository;
     }
 
@@ -41,4 +41,6 @@ public class SimpleParkingLotAllotmentStrategy implements ParkingPlaceAllotmentS
         }
         return null; // Return null if no matching slot is found
     }
+
+
 }
